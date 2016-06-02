@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>C.B.Tis 16</title>
+
+<!--grupo CSS -->
+<link rel="stylesheet" href="css/temaproyectofinal.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JS -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+ 
+ <style>
+   .que-es{
+	   text-align: justify;
+	   margin-left: 30px;
+	   margin-right: 30px;
+	   font-size: 20px;
+	   font-family:"Comic Sans MS", cursive;
+   }
+   h6 {
+	   font-size:16px;
+	   color: #00F;
+   }
+   #log {
+	   font-family:"Comic Sans MS", cursive;
+	   font-size: 19px;
+	   color: #00C;
+   }
+   #sep {
+	   margin-left: 500px;
+   }
+   #sems {
+	   margin-left: 500px;
+   }
+   #letra {
+	   margin-left: 80px;
+	   margin-right: 80px;
+	   font-size: 20px;
+   }
+   #letra2 {
+	   margin-left: 80px;
+	   margin-right: 80px;
+	   font-size: 16px;
+   }
+   #misionVision {
+	   color: #30F;
+	   font-size: 30px;
+   }
+   #img2 {
+	   margin-left: 35px;
+   }
+   #img {
+	   margin-left: 35px;
+   }
+ </style>
+</head>
+
+<body>
+    <div data-role="page" id="Principal" data-theme="a" data-position="fixed">
+       <div data-role="header" data-add-back-btn="true"  data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>CBTis No. 16</h1>
+       </div>
+       <br>
+       <div align="center">
+         <img src="recursos/Imagenes/logo-dgeti.00_jpg_srz" width="220px" height="250px">
+       </div>
+       <br>
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>¿Qué es la DGETI?</h1>
+         <div>
+         <p align="justify"  id="letra2">
+           La <strong>Dirección General de Educación Tecnológica Industrial </strong>es una dependencia adscrita a la <strong>Subsecretaría de 
+           Educación Media Superior (SEMS)</strong>, dependiente de la <strong>Secretaría de Educación Pública (SEP)</strong> que ofrece el 
+           servicio educativo del nivel medio superior tecnológico. El 16 de Abril de 1971 es publicado en el Diario Oficial de la Federación 
+           el acuerdo presidencial por el que se modifica la estructura orgánica administrativa de la <strong>SEP</strong> y se da paso a la 
+           creación de la <strong>DGETI</strong>, en agosto de ese mismo año se publican las funciones que tendrá esta institución y se integran 
+           a ella los centros de capacitación para el trabajo industrial, escuelas tecnológicas industriales, los centros de estudios tecnológicos 
+           en el Distrito Federal y los centros de estudios tecnológicos foráneos.
+         </p>
+         <p id="letra2">
+           Actualmente la <strong>DGETI</strong> es la institución de educación media superior tecnológica más grande del país, con una infraestructura 
+           física de 456 planteles educativos a nivel nacional, de los cuales 168 son <strong>CETIS</strong> y 288 <strong>CBTIS</strong>; Además proporciona 
+           a los organismos descentralizados de los gobiernos de las entidades federativas, que impartan la educación tecnológica industrial competencia de 
+           esta unidad administrativa, la asistencia académica, técnica y pedagógica a los 652 <strong>CECyTEs.</strong>
+         </p>
+         </div>
+       </div>
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>Mision</h1>
+         <div>
+           <h2 align="center" id="misionVision">Misión</h2>
+           <p id="letra" class="MV">
+             Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de profesionales técnicos y 
+             bachilleres, con el fin de contribuir al desarrollo sustentable del país.
+           </p>
+           <div align="center">
+             <img src="recursos/Imagenes/cbtis1.jpg" width="1000" height="670">
+           </div> 
+         </div>
+       </div>
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>Vision</h1>
+         <div>
+           <h2 align="center" id="misionVision">Visión</h2>
+           <p id="letra" class="MV">
+             Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y 
+             el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que 
+             demanda este nivel educativo en nuestro plantel.
+           </p>
+           <div align="center">
+             <img src="recursos/Imagenes/cbtis2.jpg" width="1000" height="670">
+           </div>           
+         </div>
+       </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>Espacios que Ofrecemos</h1>
+           <div>
+             <p>
+               <h4>° Aulas.</h4>
+               <h4>° Laboratorio de Quimica.</h4>
+               <h4>° Laboratorio de Logistica.</h4>
+               <h4>° Laboratorio de Fisica.</h4>
+               <h4>° Laboratorio de Computo.</h4>
+               <h4>° Laboratorio de Ingles.</h4>
+               <h4>° Taller de Programacion.</h4>
+               <h4>° Taller de Automatizacion.</h4>
+               <h4>° Biblioteca con equipo de Computo con servicio de Internet.</h4>
+               <h4>° Edificio de Oficinas administrativas.</h4>
+             </p>
+             <div >
+               <img src="recursos/Imagenes/cbtis4.jpg" width="800" height="500" id="img">
+               <img src="recursos/Imagenes/cbtis7.jpg" width="800" height="500" id="img2">
+             </div>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>Espacios Deportivos</h1>
+           <div>
+             <h4>~ Campo de Futbol</h4>
+             <h4>~ Cancha de Voleibol</h4>
+             <h4>~ Cancha de Basquetbol</h4>
+             <h4>~ Plaza Civica</h4>
+           </div>
+           <div align="center">
+             <img src="recursos/Imagenes/cbtis11.jpg" width="900" height="700" id="img">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>Al concluir el Bachillerato obtendras</h1>
+           <div>
+             <h2 align="center">(SEIS SEMESTRES)</h2>
+             <p>
+               <h4>* Certificado de Bachillerato, valido para continuar sus estudios en instituciones
+               universitarias, politecnicas o tecnologicas</h4>
+               <h4>* Titulo y Cedula Profesional</h4>
+               <h4>* Constancias de Compotencias</h4>
+               <h4>* Certificacion en Microsoft Office</h4>
+             </p>
+             <div align="center">
+             <img src="recursos/Imagenes/cbtis19.jpg" width="900" height="500" id="img">
+           </div>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>Seras Capaz de</h1>
+           <div>
+             <h2 align="center">El egresado del CBTis 16 sera capaz de:</h2>
+             <div>
+               <p>
+                 <h4>* Incorporarse al campo laboral tanto en el sector publico como en el privado.</h4>
+                 <h4>* Desempeñarse de manera independiente prestando sus servicios prefesionales.</h4>
+                 <h4>* Responder a un imperativo de desarrollo Municipal, Regional y Nacional.</h4>
+               </p>
+             </div>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>Te ofrecemos:</h1>
+           <p>
+             <h4>*  Continuidad de becas oportunidades</h4>
+             <h4>*  Becas de educacion Media Superior</h4>
+             <h4>*  Becas de Excelencia</h4>
+             <h4>*  Becas contra el abandono escolar</h4>
+             <h4>*  Becas alimenticias</h4>
+           </p>
+           <div align="center">
+          <img src="recursos/Imagenes/cbtis7.jpg" width="1000" height="700" id="img">
+        </div>
+         </div>
+         <br>
+       <div>
+         <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>CAED</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Especialidades que Ofrecemos</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Requisitos</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Informes</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>DATOS DEL CREADOR</h2>
+             </a>
+           </li>
+         </ul>
+       </div> 
+       <br>
+       <!-- Start WOWSlider.com -->
+         <iframe src="visor/wowslider.html" style="width:780px;height:454px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" 
+         marginheight="0" marginwidth="0"></iframe>
+       <!-- End WOWSlider.com -->
+       <br>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+       </div> 
+    </div>
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>C A E D</h1>
+      </div>
+      <div data-role="content">
+        <div>
+          <br>
+          <br>
+          <br>
+          <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+            <li class="ui-first-child ui-last-child">
+             <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>¿Que es el CAED?</h2>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Caracteristicas Generales</h2>
+             </a>
+           </li>
+          </ul>
+          <br>
+          <br>
+          <div align="center">
+           <img src="recursos/Imagenes/CAED.jpg" width="900" height="500" id="img">
+         </div>
+        </div>
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+       </div> 
+    </div>
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>¿Que es el CAED?</h1>
+      </div>
+      <div data-role="content">
+        <p class="que-es">
+          Es un Centro de Atencion para Estudiantes con Discapacidad que tiene por objetivo, brindar asesorias personalizadas a alumnos que presenten algun 
+          tipo de discapacidad (intelectual, motriz, visual o auditiva), para que inicien o terminen el bachillerato en modalidad no escolarizada y con ello
+          tengan la posibilidad de ingresar a un nivel educativo mas alto o integrarse a un area productiva.          
+        </p>
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+       </div> 
+    </div>
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Caracteristicas Generales</h1>
+      </div>
+      <div data-role="content">
+        <p class="que-es">
+          <h3> - Posee un modelo flexible, que permite el ingreso sin examen de admision.</h3>  
+          <h3> - El estudiante realiza las asignaturas de acuerdo a su propio ritmo de avance y pósibilidades de aprendizaje.</h3>
+          <h3> - Se cuenta con material didactico adecuado a diferentes discapacidades.</h3>
+          <h3> - El ingreso no exige limite de edad.</h3>
+          <h3> - Los servicios son gratuitos a excepcion de los examenes, duplicado de credencial y duplicado de Certificado de Terminacion de Estudios.</h3>
+          <h3> - El estudio de las asignaturas no se realiza obligatoriamente en el plantel.</h3>     
+        </p>
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+       </div> 
+    </div>
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Algunas de las Especialidades que te ofrecemos son:</h1>
+      </div>
+      <div data-role="content">
+        <div>
+        <br>
+        <br>
+          <div data-role="collapsible" data-content-theme="false">
+            <h1>LOGISTICA</h1>
+            <div>
+              <h3 align="center">OBJETIVO DE LA ESPECIALIDAD</h3>
+              <p id="log">
+                La carrera de Tecnico en Logistica ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas
+                a la planificacion de bienes, planificando los suministros destinados al almacenamiento de manera manual y electronica, la 
+                organizacion de los nodos logisticos para el transporte de mercancias asi como, proveer los servicios y atencion al cliente sobre 
+                los mivimientos y los costos de la cadena logistica
+              </p>
+            </div>
+            <div>
+              <h3 align="center">PERFIL DE EGRESADO</h3>
+              <p>
+                <h6>* Continuacion de estudios en el nivel superior en las carreras a fines a la especialidad</h6>
+                <h6>* Participar activamente en el mejoramiento de su calidad de vida</h6>
+                <h6>* Valorar el trabajo como medio para favorecer</h6>
+              </p>
+            </div>
+            <div align="center">
+              <img src="recursos/Imagenes/logistica.jpg" width="750" height="500">
+            </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+            <h1>MECANICA INDUSTRIAL</h1>
+            <div>
+              <h3 align="center">OBJETIVO DE LA ESPECIALIDAD</h3>
+              <p id="log">
+                El Aspirante debera ser competente con una ctitud de observacion, creatividad, trabajo en equipo y cuestionarse acerca de los 
+                fenomenos fisicos.Su estructura Curricular se divide en asignaturas de componente basico y propedeutico.
+              </p>
+              <p id="log">
+                * En capacitacion profesional las asignaturas que se cursan son:
+                <br>
+                * Taladro y Torno
+                <br>
+                * Electricidad y Control
+                <br>
+                * Soldadura Electrica y Autogena
+                <br>
+                * Rectificadora
+                <br>
+                * Resistencia de Materiiales
+                <br>
+                * Control Numerico
+                <br>
+                * Computarizado y Circuitos Hidraulicos
+              </p>
+            </div>
+            <div>
+              <h3 align="center">PERFIL DE EGRESADO</h3>
+              <p id="log">
+                EL egresado adquirira la formacion profesional mediante la cual desarrollara aptitudes y habilidades, logrando la automatizacion y 
+                mantenimiento de diferentes sistemas y procesos lo cual le permitira ser competitivo y tener un buen desempeño en el campo laboral, 
+                desarrollando las competencias profesionales siguientes:
+                <h6>* Soldar y Ajustar Piezas Mecanicas</h6>
+                <h6>* Maquina Piezas Mecanicas en Taladro y Torno</h6>
+                <h6>* Maquina Piezas Mecanicas en Fresadora, Rectificadora y Cepillo</h6>
+                <h6>* Maquina Piezas Mecanicas por CNC controladas</h6>
+                <h6>* Mantiene Sistemas de Transmision de Potencia</h6>
+              </p>
+            </div>
+            <div align="center">
+              <img src="recursos/Imagenes/mecanica.jpg" width="750" height="500">
+            </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+            <h1>TECNICO EN PROGRAMACION</h1>
+            <div>
+              <h3 align="center">OBJETIVO DE LA ESPECIALIDAD</h3>
+              <p id="log">
+                Desarrollar profesionales tecnicos en programacion que articulen saberes de diversos campos y realizar actividades dirigidas
+                a la instalacion y desarrollo de software de aplicacion utilizando programacion estructurada y orientada a objetos en 
+                ambientes web y movile, con almacenamiento persistente de datos. Configuracion y Administracion de plataforma e learning y 
+                Comercio elctronico
+              </p>
+            </div>
+            <div>
+              <h3 align="center">PERFIL DE EGRESADO</h3>
+              <p id="log">
+                El tecnico en programacion desarrollara las siguientes competencias profesionales:
+                <h6>* Desarrolla e instala software de aplicacion utilizando programacion estructurada, con almacenamiento persistente de datos.</h6>
+                <h6>* Desarrolla software Aplicacion Utilizando Programacion Orientada a Objetos con Almacenamiento Persistente de Datos.</h6>
+                <h6>* Desarrolla Aplicaciones Web y Moviles.</h6>
+                <h6>* Administra sistemas operativos, aplicaciones y servicios.</h6>
+                <h6>* Desarrolla, Administra y Configura soluciones de e-learning y comercio electronico.</h6>
+              </p>
+            </div>
+            <div align="center">
+              <img src="recursos/Imagenes/cbtis4.jpg" width="750" height="500">
+            </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+            <h1>ELECTRICIDAD</h1>
+            <div>
+              <h3>Area: Fisico-Matematico</h3>
+            </div> 
+              <p id="log">
+                Durante el proceso de formacion de los cinco modulo, el estudiante desarrollara o reforzara las siguientes competencias profesionales,
+                correspondientes al Tecnico en Electricidad.
+                <h6>* Desarrolla Instalaciones Electricas Residenciales y Comerciales</h6>
+                <h6>* Mantiene los motores y generadores de CA y CC.</h6>
+                <h6>* Mantiene en operacion los circuitos de control electromagnetico y electronico.</h6>
+                <h6>* Mantiene los sistemas de iluminacion y de anergia renovable y Mantiene instalaciones electricas de media y baja tension.</h6>
+              </p>
+              <div align="center">
+              <img src="recursos/Imagenes/electricidad.jpg" width="750" height="500">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+      </div>
+    </div>
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Requisitos</h1>
+      </div>
+      <br>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>REQUISITOS PARA SOLICITAR FICHA</h1>
+        <div>
+          <h3>- Constancias de Estudios de ser alumnos regular de 3er. Año de Secundaria.</h3>
+          <h3>- Una copia de Acta de Nacimiento.</h3>
+          <h3>- Una copia CURP (ampliacion T. Carta)</h3>
+          <h3>- Dos Fotografias Tamaño Infantil</h3>
+          <h3>- Copia del IFE del padre o tutor</h3>
+          <h3>- Costo de la Ficha $500</h3>
+        </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> REGISTRO DE ASPIRANTES </h1>
+        <div>
+          <h4>Febrero2 al 23 de Junio del 2016</h4>
+        </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> CURSO DE NIVELACION </h1>
+        <div>
+          <h4>7 Sabados apartir del 7 de Mayo al 18 de junio del 2016 en área de Matematicas y Lectura</h4>
+        </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> EXAMEN DE ADMISION </h1>
+        <div>
+          <h4>24 de Julio del 2016</h4>
+        </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> INSCRIPCIONES </h1>
+        <div>
+          <h4>Del 6 al 12 de Julio del 2016</h4>
+        </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> REQUISITOS DE INSCRIPCION </h1>
+        <div>
+          <h4>* Llenar la solicitud de inscripcion</h4>
+          <h4>* Firmar Carta Compromiso</h4>
+          <h4>* Certificado de secundaria, original y 2 copias</h4>
+          <h4>* C.U.R.P original y 2 copias</h4>
+          <h4>* Comprobante de domicilio original y 2 copias</h4>
+          <h4>* 6 fotografias tamaño infantil. Blanco y Negro no instantaneas.</h4>
+          <h4>* Certificado medico de Buena Salud con grupo sanguineo y factor RH.</h4>
+        </div>
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+       </div> 
+    </div> 
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>INFORMES</h1>
+      </div>
+      <h4 align="center"> <strong>Director: </strong> Anselmo Ramos Bravo</h4>
+      <h4 align="center"> Calle Fray Bartolome de las Casas y Fray Servando Teresa de Mier, </h4>
+      <h4 align="center"> Col. Ricardo Flores Magon </h4>
+      <h3 align="center"> Tel. (01) 244 4 45 25 43 </h3>
+      <h3 align="center"> cbtis06.dir@dgeti.sems.gob.mx </h3>
+      <div>
+              <img src="recursos/Imagenes/sep.jpg" width="204" height="268" id="sep">
+              <img src="recursos/Imagenes/logosems.gif" width="370" height="170" id="sems">
+            </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+         <div>
+           <h4> Juan Manuel Flores Bravo</h4>
+         </div>
+         <div>
+           <img src="res/android/mdpi.png" width="50" height="50">
+         </div>
+       </div> 
+    </div> 
+    <div data-role="page" id="Pagina11" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>DESARROLLADO POR:</h1>
+      </div>
+      <h1 align="center">Juan Manuel Flores Bravo</h1>
+      <h2 align="center">4to Semestre</h2>
+      <h2 align="center">GRUPO: E </h2>
+      <h4 align="center">Especialidad: </h4>
+      <h4 align="center">PROGRMACION</h4>
+      <h5 align="center">Submodulo</h5>
+      <h5 align="center">(DAM)</h5>
+      <h5 align="center">Desarrolla Aplicaciones Moviles</h5>
+    </div>
+</body>
+</html>
